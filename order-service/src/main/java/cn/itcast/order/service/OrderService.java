@@ -1,12 +1,14 @@
 package cn.itcast.order.service;
 
-import cn.itcast.order.clients.UserClient;
 import cn.itcast.order.mapper.OrderMapper;
 import cn.itcast.order.pojo.Order;
-import cn.itcast.order.pojo.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import site.bzyl.clients.UserClient;
+import site.bzyl.pojo.User;
+
+import javax.annotation.Resource;
 
 @Service
 public class OrderService {
@@ -14,7 +16,7 @@ public class OrderService {
     @Autowired
     private OrderMapper orderMapper;
 
-    @Autowired
+    @Resource
     private UserClient userClient;
 
     public Order queryOrderById(Long orderId) {

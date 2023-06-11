@@ -1,9 +1,9 @@
-package cn.itcast.order.clients;
+package site.bzyl.clients;
 
-import cn.itcast.order.pojo.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import site.bzyl.pojo.User;
 
 @FeignClient("user-service")
 public interface UserClient {

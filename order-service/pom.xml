@@ -51,6 +51,13 @@
             <groupId>io.github.openfeign</groupId>
             <artifactId>feign-httpclient</artifactId>
         </dependency>
+
+        <!-- 导入自定义的feign-api jar包-->
+        <dependency>
+            <groupId>site.bzyl</groupId>
+            <artifactId>feign-api</artifactId>
+            <version>1.0</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

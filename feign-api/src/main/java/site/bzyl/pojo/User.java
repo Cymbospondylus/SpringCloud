@@ -1,4 +1,4 @@
-package cn.itcast.order.pojo;
+package site.bzyl.pojo;
 
 import lombok.Data;
 
