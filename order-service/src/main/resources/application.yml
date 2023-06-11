@@ -13,8 +13,6 @@ spring:
     nacos:
       server-addr: localhost:8848 # nacos地址
       discovery:  # 服务发现
-        cluster-name: HZ # 集群名称
-        namespace: 311f0fdd-6a20-4c9d-b519-f962a7e66d66 # dev环境
         ephemeral: false # 非临时实例
 
 mybatis:
@@ -43,3 +41,4 @@ ribbon:
     enabled: true # 开启饥饿加载
     clients: # 指定饥饿加载的服务名称
       - user-service
+
